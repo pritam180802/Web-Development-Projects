@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniqueMess-Rent houses</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+.img1{
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.comfortimg{
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.PersonalizedService{
+    margin: 10px;
+    border-radius: 4px;
+    height: 30px;
+}
+
+/* Pricing style */
+
+
+
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      .pricing-container{
+        flex-direction: column;
+      }
+    }
+
+    .pricing-container{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+      font-family: 'Sono', sans-serif;
+
+    }
+
+    .pricing-plan{
+     background-color:lightblue;
+     border-radius: 5px;
+     flex-basis: 400px;
+     text-align: center;
+     padding: 20px;
+
+    }
+
+    .plan-title{
+      font-size: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .plan-price{
+      font-size: 25px;
+      font-weight: bolder;
+      text-align: center;
+    }
+
+    .plan-features{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .plan-button{
+      background-color: orange;
+      color: white;
+      text-align: center;
+      margin-top: 15px;
+      border: 0;
+      padding: 10px;
+      border-radius: 5px;
+    } 
+
+    /* Footer styling */
+
+    /* Style for the main footer container */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/* Style for the footer container inside the main footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Style for the footer logo */
+.footer-logo img {
+  width: 100px; /* Adjust the width as needed */
+}
+
+/* Style for the footer links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ff9900; /* Change the color on hover as needed */
+}
+
+/* Style for the footer contact information */
+.footer-contact p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Style for the footer bottom section with copyright notice */
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footer-bottom p {
+  font-size: 12px;
+}
+
+
+</style>
+<body>
+   
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="./pngtree-cartoon-house-illustration-png-image_6434928.png" alt="house" height="30px"> UniqueMess</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            More
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<hr>
+
+<!-- Stay Safe With Us -->
+
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="./pngtree-cartoon-house-illustration-png-image_6434928.png" alt="" width="82" height="67">
+    <h1 class="display-5 fw-bold text-body-emphasis">Stay Safe With Us</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Are you searching for the perfect getaway, a place that combines comfort, convenience, and charm? Look no further! We invite you to explore our exquisite rental property that could be your next home for an unforgettable experience..</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Book Your Room Now</button>
+        <button type="button" class="btn btn-outline-secondary btn-lg px-4">FAQs</button>
+      </div>
+    </div>
+    <img class="img1" src="./rent.jpg" alt="">
+  </div>
+
+<hr>
+
+<!-- Why Choose us -->
+
+<div class="container px-4 py-5">
+    <h1 class="pb-2 border-bottom">Why Choose Us:</h1>
+
+    <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+      <div class="col d-flex flex-column align-items-start gap-2">
+        <h2 class="fw-bold text-body-emphasis"><img class="comfortimg" src="./comfort.jpeg" alt="">Comfort & Style</h2>
+        <p class="text-body-secondary"> Step inside, and you'll be greeted by a meticulously designed interior that seamlessly blends modern amenities with classic charm. From the cozy living spaces to the well-appointed bedrooms, every inch of this house exudes comfort and style.</p>
+        <a href="#" class="btn btn-primary btn-lg">More</a>
+      </div>
+
+      <div class="col">
+        <div class="row row-cols-1 row-cols-sm-2 g-4">
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis"><img src="./decipline.jpg" alt="" class="PersonalizedService">Our Dicipline</h4>
+            <p class="text-body-secondary">Our mess has a certain list of diciplines that can help the students to perform their normal activities efficiently. We think, that's makes us unique from others. </p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis"><img src="./Anti-Ragging.jpg" alt="" class="PersonalizedService">Anti-Ragging Environment</h4>
+            <p class="text-body-secondary">Our mess provides fully anti-ragging environment(Only intro). We are concerned about it personally so dont't worry. </p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+              
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis"><img src="./Impeccable Cleanliness.jpg" alt="" class="PersonalizedService">Impeccable Cleanliness</h4>
+            <p class="text-body-secondary">We take cleanliness seriously. Rest assured, our property is thoroughly cleaned and sanitized between guests to ensure your safety and peace of mind.</p>
+          </div>
+
+          <div class="col d-flex flex-column gap-2">
+            <div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+            
+            </div>
+            <h4 class="fw-semibold mb-0 text-body-emphasis"><img src="./Personalized Service.png" alt=""  class="PersonalizedService" >Personalized Service</h4>
+            <p class="text-body-secondary">We are always here to make your stay as seamless as possible. Whether you need local recommendations, assistance with reservations, or anything else, we're just a message or phone call away.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Pricing -->
+
+  <div class="pricing-container"> 
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">1500/month</div>
+      <ul class="plan-features">
+        <li>✅ 5 Boys/Room</li>
+        <li>✅ Electric</li>
+        <li>🚫 External Electric devices</li>
+      </ul>
+      <button class="plan-button">Book Now</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$2100/month</div>
+      <ul class="plan-features">
+        <li>✅ 3 Boys/Room</li>
+        <li>✅ Electric</li>
+        <li>🚫 External Electric devices</li>
+      </ul>
+      <button class="plan-button">Book Now</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">2800/month</div>
+      <ul class="plan-features">
+        <li>✅ 2 Boys/Room</li>
+        <li>✅ Electric</li>
+        <li>✅ External Electric devices</li>
+      </ul>
+      <button class="plan-button">Book Now</a>
+    </div>
+  </div>
+
+  <!-- Our students -->
+
+  <div class="container">
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./photo 1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Holi 2k23</h5>
+          <p>This is how students Enjoying</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./photo 2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Birthday Celebration</h5>
+          <p>Such a memorable day.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./photo 3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Birthday Celebration</h5>
+          <p>Such a memorable day.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<!-- Footer -->
+
+<footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="./pngtree-cartoon-house-illustration-png-image_6434928.png" alt="Company Logo">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p>Contact Us: 1234567890</p>
+        <p>Email: info@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 UniqueMess. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
